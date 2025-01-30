@@ -28,9 +28,10 @@ try {
 
     if ($mail->send()) {
         // Display professional message to the user
-        echo "<div class='confirmation-message'>
-                <p>Thank you for reaching out, $name. We have received your message and will get back to you shortly regarding your service request or quotation. We appreciate your interest in our services!</p>
-              </div>";
+        echo "<div class='confirmation-message' style='background: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%); color: #2c6b2f; padding: 20px; border: 1px solid #2c6b2f; text-align: center; border-radius: 8px;'>
+        <p>Thank you for reaching out, $name. We have received your message and will get back to you shortly regarding your service request or quotation. We appreciate your interest in our services!</p>
+      </div>";
+
     } else {
         echo "Message could not be sent.";
     }
